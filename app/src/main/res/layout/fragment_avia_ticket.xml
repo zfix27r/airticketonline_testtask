@@ -1,31 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="@dimen/_16dp"
     tools:context=".ui.aviaticket.AviaTicketFragment">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Поиск дешевых авиабилетов" />
+        android:id="@+id/textView_mainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_32dp"
+        android:text="@string/main_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_ticketOffice"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_mainTitle">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <EditText
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_16dp"
+            android:paddingHorizontal="@dimen/_8dp">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/imageView_ticketOffice_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_air_ticket_search"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout_ticketOffice_flightFrom"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="@dimen/editText_ticketOffice_flight_height"
+                android:layout_marginStart="@dimen/_16dp"
+                android:hint="@string/ticketOffice_flight_from_hint"
+                app:boxStrokeWidth="@dimen/_0dp"
+                app:counterMaxLength="32"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView_ticketOffice_search"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputEditText_ticketOffice_flightFrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/materialDivider"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="@dimen/divider_ticketOffice_flight_height"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textInputLayout_ticketOffice_flightFrom"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout_ticketOffice_flightFrom" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout_ticketOffice_flightTo"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="@dimen/editText_ticketOffice_flight_height"
+                android:hint="@string/ticketOffice_flight_to_hint"
+                app:boxStrokeWidth="@dimen/_0dp"
+                app:counterMaxLength="32"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textInputLayout_ticketOffice_flightFrom"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout_ticketOffice_flightFrom">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputEditText_ticketOffice_flightTo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView_promo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_32dp"
+        android:text="@string/promo_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView_ticketOffice" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_promo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_promo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
