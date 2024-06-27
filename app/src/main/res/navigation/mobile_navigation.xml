@@ -5,30 +5,34 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@id/aviaTicketFragment">
 
-
     <fragment
         android:id="@+id/aviaTicketFragment"
         android:name="ru.zfix27r.ticketofficeonline.ui.aviaticket.AviaTicketFragment"
         android:label="fragment_avia_ticket"
         tools:layout="@layout/fragment_avia_ticket" />
+
     <fragment
         android:id="@+id/hotelFragment"
         android:name="ru.zfix27r.ticketofficeonline.ui.hotel.HotelFragment"
         android:label="fragment_hotel"
         tools:layout="@layout/fragment_hotel" />
+
     <fragment
         android:id="@+id/inShortFragment"
         android:name="ru.zfix27r.ticketofficeonline.ui.inshort.InShortFragment"
         android:label="fragment_in_short"
         tools:layout="@layout/fragment_in_short" />
-    <fragment
-        android:id="@+id/profileFragment"
-        android:name="ru.zfix27r.ticketofficeonline.ui.profile.ProfileFragment"
-        android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+
     <fragment
         android:id="@+id/subscriptionFragment"
         android:name="ru.zfix27r.ticketofficeonline.ui.subscription.SubscriptionFragment"
         android:label="fragment_subscription"
         tools:layout="@layout/fragment_subscription" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="ru.zfix27r.ticketofficeonline.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+
 </navigation>
