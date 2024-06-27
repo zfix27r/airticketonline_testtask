@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Касса онлайн</string>
+    <string name="title_air_ticket">Авиабилеты</string>
+    <string name="title_hotel">Отели</string>
+    <string name="title_in_short">Короче</string>
+    <string name="title_subscription">Подписки</string>
+    <string name="title_profile">Профиль</string>
+</resources>
