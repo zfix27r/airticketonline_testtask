@@ -209,7 +209,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/materialDivider2"
             app:shapeAppearanceOverlay="@style/Theme.TicketOffice.SearchPopularPreview"
-            app:srcCompat="@drawable/img_search_popular_1" />
+            app:srcCompat="@drawable/img_search_popular_2" />
 
         <TextView
             android:id="@+id/imageView_search_popular_title2"
@@ -217,7 +217,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_8dp"
-            android:text="@string/search_popular_title_1"
+            android:text="@string/search_popular_title_2"
             app:layout_constraintStart_toEndOf="@+id/imageView_search_popular_preview2"
             app:layout_constraintTop_toTopOf="@+id/imageView_search_popular_preview2" />
 
@@ -247,7 +247,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/materialDivider"
             app:shapeAppearanceOverlay="@style/Theme.TicketOffice.SearchPopularPreview"
-            app:srcCompat="@drawable/img_search_popular_1" />
+            app:srcCompat="@drawable/img_search_popular_3" />
 
         <TextView
             android:id="@+id/imageView_search_popular_title3"
@@ -255,7 +255,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_8dp"
-            android:text="@string/search_popular_title_1"
+            android:text="@string/search_popular_title_3"
             app:layout_constraintStart_toEndOf="@+id/imageView_search_popular_preview3"
             app:layout_constraintTop_toTopOf="@+id/imageView_search_popular_preview3" />
 

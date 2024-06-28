@@ -14,6 +14,9 @@
     <string name="search_anywhere_title">Куда угодно</string>
     <string name="search_weekend_title">Выходные</string>
     <string name="search_hot_ticket_title">Горячие билеты</string>
+
     <string name="search_popular_title_1">Стамбул</string>
+    <string name="search_popular_title_2">Сочи</string>
+    <string name="search_popular_title_3">Пхукет</string>
     <string name="search_popular_description">Популярное направление</string>
 </resources>
