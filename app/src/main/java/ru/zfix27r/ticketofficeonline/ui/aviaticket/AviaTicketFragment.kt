@@ -6,9 +6,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import ru.zfix27r.ticketofficeonline.R
+import ru.zfix27r.ticketofficeonline.databinding.ActivityMainBinding
+import ru.zfix27r.ticketofficeonline.databinding.FragmentAviaTicketBinding
 
 class AviaTicketFragment : Fragment() {
+
+    private lateinit var binding: FragmentAviaTicketBinding
 
     companion object {
         fun newInstance() = AviaTicketFragment()
@@ -23,9 +28,23 @@ class AviaTicketFragment : Fragment() {
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.fragment_avia_ticket, container, false)
+        binding = FragmentAviaTicketBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.textInputEditTextAviaTicketOfficeFlightFlightTo.setOnClickListener {
+            navToSearch()
+        }
+    }
+
+    private fun navToSearch() {
+        findNavController().navigate(R.id.action_aviaTicketFragment_to_searchFragment)
     }
 }
