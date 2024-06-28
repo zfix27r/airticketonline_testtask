@@ -8,5 +8,5 @@
     <string name="ticketOffice_flight_from_hint">Откуда - Москва</string>
     <string name="ticketOffice_flight_to_hint">Куда - Турция</string>
     <string name="promo_title">Музыкально отлететь</string>
-    <string name="main_title">Поиск дешевых авиабилетов</string>
+    <string name="main_title">Поиск дешевых\nавиабилетов</string>
 </resources>
