@@ -14,5 +14,11 @@
     <dimen name="aviaTicket_promo_marginEnd">50dp</dimen>
     <dimen name="aviaTicket_promo_preview_size">132dp</dimen>
     <dimen name="aviaTicket_promo_icon_plane_size">24dp</dimen>
+    <dimen name="search_menu_icon_size">48dp</dimen>
+    <dimen name="search_menu_text_width">80dp</dimen>
+    <dimen name="_24dp">24dp</dimen>
+    <dimen name="search_popular_marginTop">32dp</dimen>
+    <dimen name="search_popular_preview_size">40dp</dimen>
+    <dimen name="_1dp">1dp</dimen>
 
 </resources>

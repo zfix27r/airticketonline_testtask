@@ -51,6 +51,20 @@
         <item name="color">@color/white</item>
     </style>
 
+    <style name="Theme.TicketOffice.Text3">
+        <item name="fontFamily">@font/sf_regular</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Theme.TicketOffice.Text3.SearchMenuText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="Theme.TicketOffice.Text3.SearchPopularDescription">
+        <item name="android:textColor">@color/grey5</item>
+    </style>
+
     <style name="Theme.TicketOffice.EditTextFlight">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">36dp</item>
@@ -62,6 +76,11 @@
         <item name="android:paddingEnd">@dimen/_0dp</item>
         <item name="android:inputType">text</item>
         <item name="singleLine">true</item>
+    </style>
+
+    <style name="Theme.TicketOffice.SearchPopularPreview">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/_8dp</item>
     </style>
 
 </resources>

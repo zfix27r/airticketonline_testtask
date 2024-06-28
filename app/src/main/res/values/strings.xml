@@ -9,4 +9,11 @@
     <string name="aviaTicket_office_flight_flight_to_hint">Куда - Турция</string>
     <string name="aviaTicket_promo_text">Музыкально отлететь</string>
     <string name="aviaTicket_slogan">Поиск дешевых\nавиабилетов</string>
+
+    <string name="search_difficult_route_title">Сложный маршрут</string>
+    <string name="search_anywhere_title">Куда угодно</string>
+    <string name="search_weekend_title">Выходные</string>
+    <string name="search_hot_ticket_title">Горячие билеты</string>
+    <string name="search_popular_title_1">Стамбул</string>
+    <string name="search_popular_description">Популярное направление</string>
 </resources>
