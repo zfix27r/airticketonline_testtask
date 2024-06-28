@@ -5,8 +5,8 @@
     <string name="title_in_short">Короче</string>
     <string name="title_subscription">Подписки</string>
     <string name="title_profile">Профиль</string>
-    <string name="ticketOffice_flight_from_hint">Откуда - Москва</string>
-    <string name="ticketOffice_flight_to_hint">Куда - Турция</string>
-    <string name="promo_title">Музыкально отлететь</string>
-    <string name="main_title">Поиск дешевых\nавиабилетов</string>
+    <string name="aviaTicket_office_flight_from_hint">Откуда - Москва</string>
+    <string name="aviaTicket_office_flight_flight_to_hint">Куда - Турция</string>
+    <string name="aviaTicket_promo_text">Музыкально отлететь</string>
+    <string name="aviaTicket_slogan">Поиск дешевых\nавиабилетов</string>
 </resources>

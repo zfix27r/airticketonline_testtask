@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/aviaTicket_promo_marginEnd">
+
+    <ImageView
+        android:id="@+id/imageView_aviaTicket_promo_preview"
+        android:layout_width="@dimen/aviaTicket_promo_preview_size"
+        android:layout_height="@dimen/aviaTicket_promo_preview_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/img_promo_1" />
+
+    <TextView
+        android:id="@+id/imageView_aviaTicket_promo_title"
+        style="@style/Theme.TicketOffice.Text1.White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_aviaTicket_promo_preview"
+        tools:text="Die Antword" />
+
+    <TextView
+        android:id="@+id/imageView_aviaTicket_promo_city"
+        style="@style/Theme.TicketOffice.Text2.White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_aviaTicket_promo_title"
+        tools:text="Будапешт" />
+
+    <ImageView
+        android:id="@+id/imageView_aviaTicket_promo_icon_plane"
+        android:layout_width="@dimen/aviaTicket_promo_icon_plane_size"
+        android:layout_height="@dimen/aviaTicket_promo_icon_plane_size"
+        android:layout_marginTop="@dimen/_4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_aviaTicket_promo_city"
+        app:srcCompat="@drawable/ic_menu_air_ticket" />
+
+    <TextView
+        android:id="@+id/imageView_aviaTicket_promo_cost"
+        style="@style/Theme.TicketOffice.Text2.White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView_aviaTicket_promo_icon_plane"
+        app:layout_constraintTop_toTopOf="@+id/imageView_aviaTicket_promo_icon_plane"
+        tools:text="от 22264 ₽" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

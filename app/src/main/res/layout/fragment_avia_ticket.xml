@@ -8,101 +8,91 @@
     tools:context=".ui.aviaticket.AviaTicketFragment">
 
     <TextView
-        android:id="@+id/textView_mainTitle"
-        style="@style/Theme.TicketOffice.Header1"
+        android:id="@+id/textView_aviaTicket_slogan"
+        style="@style/Theme.TicketOffice.Header1.AviaTicketMainTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="94dp"
-        android:layout_marginTop="28dp"
-        android:text="@string/main_title"
+        android:layout_marginHorizontal="@dimen/aviaTicket_slogan_marginHorizontal"
+        android:layout_marginTop="@dimen/aviaTicket_slogan_marginTop"
+        android:text="@string/aviaTicket_slogan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout_ticketOffice_background"
-        android:layout_width="0dp"
+        android:id="@+id/constraintLayout_aviaTicket_office_border"
+        android:layout_width="@dimen/_0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="66dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/ticket_office_background_1"
+        android:layout_marginTop="@dimen/aviaTicket_office_border_marginTop"
+        android:background="@drawable/avia_ticket_office_border_background"
         android:padding="@dimen/_16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_mainTitle">
+        app:layout_constraintTop_toBottomOf="@+id/textView_aviaTicket_slogan">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout_ticketOffice"
-            android:layout_width="0dp"
+            android:id="@+id/constraintLayout_aviaTicket_office"
+            android:layout_width="@dimen/_0dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/ticket_office_background_2"
+            android:background="@drawable/avia_ticket_office_background"
             android:padding="@dimen/_8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:id="@+id/imageView_ticketOffice_search"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
+                android:id="@+id/imageView_aviaTicket_office_icon"
+                android:layout_width="@dimen/aviaTicket_office_icon_size"
+                android:layout_height="@dimen/aviaTicket_office_icon_size"
                 android:src="@drawable/ic_air_ticket_search"
-                app:layout_constraintBottom_toBottomOf="@+id/textInputLayout_ticketOffice_flightTo"
+                app:layout_constraintBottom_toBottomOf="@+id/textInputLayout_aviaTicket_office_flight_flight_to"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/textInputLayout_ticketOffice_flightFrom" />
+                app:layout_constraintTop_toTopOf="@+id/textInputLayout_aviaTicket_office_flight_from" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayout_ticketOffice_flightFrom"
+                android:id="@+id/textInputLayout_aviaTicket_office_flight_from"
                 android:layout_width="@dimen/_0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_16dp"
                 android:layout_marginEnd="@dimen/_8dp"
-                android:textColorHint="@color/white"
-                android:hint="@string/ticketOffice_flight_from_hint"
-                app:boxStrokeWidth="@dimen/_0dp"
-                app:counterMaxLength="32"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imageView_ticketOffice_search"
+                app:layout_constraintStart_toEndOf="@+id/imageView_aviaTicket_office_icon"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/textInputEditText_ticketOffice_flightFrom"
-                    android:layout_width="match_parent"
-                    android:layout_height="36dp"
-                    android:imeOptions="actionDone"
-                    android:inputType="text"
-                    android:singleLine="true"
-                    android:textAppearance="@style/Theme.TicketOffice.Text1" />
+                    android:id="@+id/textInputEditText_aviaTicket_office_flight_from"
+                    style="@style/Theme.TicketOffice.EditTextFlight"
+                    android:hint="@string/aviaTicket_office_flight_from_hint"
+                    android:textColorHint="@color/white" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.divider.MaterialDivider
-                android:id="@+id/materialDivider"
+                android:id="@+id/materialDivider_aviaTicket_office_flight"
                 android:layout_width="@dimen/_0dp"
-                android:layout_height="@dimen/divider_ticketOffice_flight_height"
-                app:layout_constraintEnd_toEndOf="@+id/textInputLayout_ticketOffice_flightFrom"
-                app:layout_constraintStart_toStartOf="@+id/textInputLayout_ticketOffice_flightFrom"
-                app:layout_constraintTop_toBottomOf="@+id/textInputLayout_ticketOffice_flightFrom" />
+                android:layout_height="@dimen/aviaTicket_office_flight_divider_height"
+                app:dividerColor="@color/grey6"
+                app:layout_constraintEnd_toEndOf="@+id/textInputLayout_aviaTicket_office_flight_from"
+                app:layout_constraintStart_toStartOf="@+id/textInputLayout_aviaTicket_office_flight_from"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout_aviaTicket_office_flight_from" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayout_ticketOffice_flightTo"
+                android:id="@+id/textInputLayout_aviaTicket_office_flight_flight_to"
                 android:layout_width="@dimen/_0dp"
                 android:layout_height="wrap_content"
-                android:hint="@string/ticketOffice_flight_to_hint"
-                android:textColorHint="@color/grey6"
-                app:boxStrokeWidth="@dimen/_0dp"
-                app:counterMaxLength="32"
-                app:layout_constraintEnd_toEndOf="@+id/textInputLayout_ticketOffice_flightFrom"
-                app:layout_constraintStart_toStartOf="@+id/textInputLayout_ticketOffice_flightFrom"
-                app:layout_constraintTop_toBottomOf="@+id/textInputLayout_ticketOffice_flightFrom">
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="@+id/textInputLayout_aviaTicket_office_flight_from"
+                app:layout_constraintStart_toStartOf="@+id/textInputLayout_aviaTicket_office_flight_from"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout_aviaTicket_office_flight_from">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/textInputEditText_ticketOffice_flightTo"
-                    android:layout_width="match_parent"
-                    android:layout_height="36dp"
-                    android:imeOptions="actionDone"
-                    android:inputType="text"
-                    android:singleLine="true" />
+                    android:id="@+id/textInputEditText_aviaTicket_office_flight_flight_to"
+                    style="@style/Theme.TicketOffice.EditTextFlight"
+                    android:hint="@string/aviaTicket_office_flight_flight_to_hint"
+                    android:textColorHint="@color/grey6" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -111,20 +101,24 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/textView_promo"
+        android:id="@+id/textView_aviaTicket_promo"
+        style="@style/Theme.TicketOffice.Header1.AviaTicketPromoTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/promo_title"
+        android:layout_marginTop="@dimen/aviaTicket_promo_marginTop"
+        android:text="@string/aviaTicket_promo_text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout_ticketOffice_background" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout_aviaTicket_office_border" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView_promo"
+        android:id="@+id/recyclerView_aviaTicket_promo"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/_0dp"
         android:orientation="horizontal"
+        android:paddingTop="@dimen/_16dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_promo" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_aviaTicket_promo"
+        tools:listitem="@layout/item_avia_ticket_promo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
